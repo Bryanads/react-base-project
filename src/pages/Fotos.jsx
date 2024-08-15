@@ -4,23 +4,23 @@ import dados from "../data/computadores.json";
 import Protegida from "./Protegida";
 
 const Fotos = () => {
- 
+
   return (
       <Protegida>
         <ListContainer>
           {dados.map(
             (el, index) => (
-              <FotoCard 
+              <FotoCard
                 key={index}
                 titulo={el.nome}
-                src={`${process.env.PUBLIC_URL}${el.url}`}
+                src={`${process.env.PUBLIC_URL}/${el.url}`}
                 link_original={el.link_original}
                 agradecimento={el.agradecimento}
               />
               )
           )}
           </ListContainer>
-      </Protegida>      
+      </Protegida>
  )
 };
 
