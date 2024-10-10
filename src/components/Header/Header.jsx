@@ -6,12 +6,14 @@ const Header = () => (
     <Link to="/">Home</Link>
     <Link to="/fotos">Fotos</Link>
     <Link to="/atletas">Atletas</Link>
-    
+    <Link to="/sobre-nos">Sobre Nós</Link>
+
+
     { window.sessionStorage.getItem('accessToken')
     ? <Link to="/logout">Logout</Link>
     : <Link to="/login">Login</Link>
     }
-    
+
   </Top>
 )
 
